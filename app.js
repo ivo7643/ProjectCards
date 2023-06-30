@@ -1,4 +1,5 @@
 
+
 const fs = require('fs').promises;
 const readlineSync = require('readline-sync');
 
@@ -12,4 +13,3 @@ function getFiles(fileName) {
     return quest;
   });
 }
-
