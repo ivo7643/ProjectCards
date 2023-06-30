@@ -13,5 +13,3 @@ function getFiles(fileName) {
     return quest;
   });
 }
-
-
