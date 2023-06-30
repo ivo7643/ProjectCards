@@ -47,10 +47,10 @@ class Topics {
     let name = readline.question("Ваш ответ: ");
     if (name.toLowerCase() === question.answer.toLowerCase()) {
       this.score += 1;
-      console.log(` ✅ КРАСАВА - ответ правильный || счет = ${this.score}`);
+      console.log(` ✅ ${this.name} КРАСАВА - ответ правильный || счет = ${this.score}`);
     } else {
       console.log(
-        ` ❌ грусть печаль - ответ неправильный || счет = ${this.score}\n ❎ Правильный ответ: ${question.answer}`
+        ` ❌ ${this.name} грусть печаль - ответ неправильный || счет = ${this.score}\n ❎ Правильный ответ: ${question.answer}`
       );
     }
   }
@@ -58,7 +58,7 @@ class Topics {
   end() {
     let am;
     let con;
-    if (this.score > 1) {
+    if (this.score > 2) {
       am = "🥳";
       con = `${this.name} МОЛОДЕЦ! ЭТО ПОБЕДА`;
     } else {
